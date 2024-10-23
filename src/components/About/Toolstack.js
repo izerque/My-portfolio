@@ -7,12 +7,13 @@ import {
   SiVercel,
   SiMacos,
 } from "react-icons/si";
+import { FaJira } from "react-icons/fa";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <FaJira />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
