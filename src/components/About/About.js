@@ -51,7 +51,7 @@ function About() {
           </div>
 
           {/* Awards section */}
-          <Awards />
+          {/* <Awards /> */}
 
          
         </div>
