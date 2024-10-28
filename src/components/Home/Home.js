@@ -3,13 +3,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
+import homeimg from "../../Assets/homeimg.png"
+import mimo from '../../Assets/mimo-01.png'
 import Type from "./Type";
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Particle />
+        {/* <Particle /> */}
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -22,7 +24,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> ISAAC <span className="text-white">MBANGIRE</span> </strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -30,11 +32,11 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col  md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeLogo}
+                src={mimo}
                 alt="home pic"
-                className="img-fluid"
+                className="img-fluid h-10"
                 style={{ maxHeight: "450px" }}
               />
             </Col>

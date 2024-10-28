@@ -38,8 +38,8 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+        <Navbar.Brand href="/" className="d-flex font-bold">
+          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}MIMO
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -54,7 +54,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link  as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
@@ -82,7 +82,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            <Nav.Item >
               <Nav.Link
                 as={Link}
                 to="/resume"
@@ -92,24 +92,16 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
 
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/soumyajit4419/Portfolio"
                 target="_blank"
-                className="fork-btn-inner"
+                className="fork-btn-inner flex border bg-[#57b8d3]"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <p className="text-md font-bold align-middle">Hi ...</p>
+                {/* <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                <AiFillStar style={{ fontSize: "1.1em" }} /> */}
               </Button>
             </Nav.Item>
           </Nav>

@@ -3,36 +3,46 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa"
+import { CiLink } from "react-icons/ci";
+
 
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+      <Card.Body className="project-details">
+        <Card.Title className="project-title">{props.title}</Card.Title>
+        <Card.Text className="project-details-1" style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
+        
         {"\n"}
         {"\n"}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
+        <ul className="footer-icons flex  border bottom-0 absolute">
+            <li className="social-icons">
+              <a
+                href="https://github.com/izerque"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AiFillGithub />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://x.com/izerque"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <CiLink />
+              </a>
+            </li>
+          </ul>
       </Card.Body>
     </Card>
   );

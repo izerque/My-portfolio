@@ -10,10 +10,12 @@ function Type() {
           "Freelancer",
           "MERN Stack Developer",
           "Open Source Contributor",
+          "Frontend Developer",
+          "UI/UX Designer"
         ],
         autoStart: true,
-        loop: true,
-        deleteSpeed: 50,
+        loop:true,
+        deleteSpeed:10,
       }}
     />
   );
