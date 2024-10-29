@@ -93,17 +93,16 @@ function NavBar() {
             </Nav.Item>
 
 
-            <Nav.Item className="fork-btn">
+            {/* <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/izerque/My-portfolio"
                 target="_blank"
-                className="fork-btn-inner flex border bg-[#57b8d3]"
+                className="fork-btn-inner fork-button"
               >
-                <p className="text-md font-bold align-middle">Hi ...</p>
-                {/* <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} /> */}
+                <p className="text-md font-bold align-middle">CheCk Me</p>
+                <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

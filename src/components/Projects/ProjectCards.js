@@ -13,7 +13,7 @@ function ProjectCards(props) {
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body className="project-details">
-        <Card.Title className="project-title">{props.title}</Card.Title>
+        <Card.Title className="project-title1">{props.title}</Card.Title>
         <Card.Text className="project-details-1" style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
@@ -21,7 +21,7 @@ function ProjectCards(props) {
         {"\n"}
         {"\n"}
 
-        <ul className="footer-icons flex  border bottom-0 absolute">
+        <ul className="footer-icons">
             <li className="social-icons">
               <a
                 href="https://github.com/izerque"
@@ -32,7 +32,7 @@ function ProjectCards(props) {
                 <AiFillGithub />
               </a>
             </li>
-            <li className="social-icons">
+            <li className="social-icons social-icons-links">
               <a
                 href="https://x.com/izerque"
                 style={{ color: "white" }}

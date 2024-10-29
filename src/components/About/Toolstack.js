@@ -6,6 +6,9 @@ import {
   SiSlack,
   SiVercel,
   SiMacos,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiAdobexd
 } from "react-icons/si";
 import { FaJira } from "react-icons/fa";
 
@@ -27,6 +30,15 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiVercel />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+      <SiAdobephotoshop />
+    </Col>
+    <Col xs={4} md={2} className="tech-icons">
+    <SiAdobeillustrator />
+  </Col>
+  <Col xs={4} md={2} className="tech-icons">
+  <SiAdobexd />
+</Col>
     </Row>
   );
 }
