@@ -29,17 +29,17 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/My-portfolio">
+    <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/My-portfolio" element={<Home />} />
+          <Route path="/My-portfolio/project" element={<Projects />} />
+          <Route path="/My-portfolio/about" element={<About />} />
+          <Route path="/My-portfolio/resume" element={<Resume />} />
+          <Route path="*" element={<Navigate to="/My-portfolio"/>} />
         </Routes>
         <Footer />
       </div>
